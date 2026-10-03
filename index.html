@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" data-app="schema-studio" data-layout="tool">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4ec">
+  <meta name="description" content="Build structured data drafts for common page types, inspect the JSON-LD and copy a script tag for review before publishing.">
+  <meta property="og:title" content="Schema Studio — STRUCTURED DATA · JSON-LD BUILDER">
+  <meta property="og:description" content="Build structured data drafts for common page types, inspect the JSON-LD and copy a script tag for review before publishing.">
+  <meta property="og:image" content="preview.svg">
+  <title>Schema Studio — STRUCTURED DATA · JSON-LD BUILDER</title>
+  <link rel="icon" href="preview.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body style="--paper:#f7f4ec;--ink:#2c2b25;--muted:#79766a;--accent:#e7c16f;--accent2:#c68fee">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement"><span>A FREE, LOCAL-FIRST MARKETING WORKBENCH</span><span>SAMPLE CONTENT · NO TRACKING <b>✳</b></span></div>
+  <header class="site-nav"><a class="brand" href="#top" aria-label="Schema Studio home"><span class="brand-mark">◈</span>Schema Studio<small>TOOLKIT</small></a><nav id="main-navigation" aria-label="Main navigation"><a href="#workspace">Workspace</a><a href="#notes">About</a><a class="nav-cta" href="#workspace">Open the tool ↗</a></nav><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button></header>
+  <main id="main">
+    <section class="tool-hero" id="top"><div><span class="eyebrow"><i class="eyebrow-dot"></i>STRUCTURED DATA · JSON-LD BUILDER</span><h1>Make your page<br>clear to machines.</h1><p>Build structured data drafts for common page types, inspect the JSON-LD and copy a script tag for review before publishing.</p><div class="tool-trust"><span class="lock-mark">⌑</span><span>Runs in your browser <b>·</b> No account <b>·</b> Your data stays local</span></div></div><div class="tool-hero-side"><div class="metric-orb"><b>Valid JSON-LD</b><span>schema output you can inspect before publishing</span></div><span class="orb-caption">BUILT FOR CLEARER DECISIONS</span></div></section>
+    <section id="workspace" class="tool-workspace"><div class="schema-shell"><section class="panel"><span class="eyebrow">CHOOSE A PAGE TYPE</span><label for="schema-type">Structured data type<select id="schema-type"><option value="Article">Article</option><option value="LocalBusiness">Local business</option><option value="Product">Product</option><option value="Event">Event</option></select></label><div id="schema-fields"></div><button id="build-schema" class="btn btn--accent">Generate JSON-LD ↗</button><p id="schema-status" class="micro-note" aria-live="polite">Generated markup is a draft. Check search documentation before publishing.</p></section><section class="panel result-panel"><div class="panel-head"><span class="eyebrow">GENERATED STRUCTURED DATA</span><button id="copy-schema" class="text-button">Copy JSON ↗</button></div><pre id="schema-output" class="json-output" aria-live="polite">Choose a type and enter details to generate JSON-LD.</pre><div class="schema-check"><b>Before publishing</b><p>Use accurate, visible page content. Structured data does not guarantee a rich result.</p></div></section></div></section>
+    <section class="notes-section notes-section--tool" id="notes"><div><span class="eyebrow">SCOPE & METHOD</span><h2>A helpful lens, with its limits in view.</h2></div><div class="notes-copy"><p>This small tool makes its inputs and assumptions visible. It runs locally in your browser and never sends the data you enter to an external service.</p><p>Use results as a practical starting point, then check platform documentation, real search results and first-hand research before making business decisions.</p><a href="README.md" class="text-button">Read the project notes ↗</a></div></section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="#top"><span class="brand-mark">✳</span>Schema Studio</a><p>A small, transparent tool for better marketing work.</p><div class="footer-links"><a href="#top">Back to top ↑</a><a href="README.md">Documentation</a><span>Built by Ronak Soltani · 2026</span></div></footer>
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
